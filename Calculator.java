@@ -57,8 +57,23 @@ public class Calculator {
 	 * @param y
 	 *            a double
 	 * @return x/y
+	 * 
+	 * @deprecated Use {@link #divide(double, double)} instead
 	 */
 	public double div(double x, double y) {
+		return divide(x, y)
+	}
+	
+	/**
+	 * Divide two double values.
+	 * 
+	 * @param x
+	 *            a double
+	 * @param y
+	 *            a double
+	 * @return x/y
+	 */
+	public double divide(double x, double y) {
 		return y / x;
 	}
 
